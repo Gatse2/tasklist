@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+*{
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html{
+    font-size: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App{
+    font-size: 1.6rem;
+    margin: 2vh 3vw;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+header{
+    text-align: left;
 }
-
-.App-link {
-  color: #61dafb;
+h1{
+    font-size: 4rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form{
+    font-size: 2rem;
+}
+.form > label{
+    font-weight: 600;
+}
+.form > button{
+    background-color: white;
+    padding: 15px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form > input{
+margin: 2vh 1vw;
+padding: 10px 10px;
+font-size: 1.6rem;
+border: 2px solid black;
+border-radius: 5px;
+}
+.form::after{
+    margin: 5vh auto;
+    content: "";
+    display: block;
+    background-color: chocolate;
+    width: 80%;
+    min-height: 2px;
+}
+.task{
+    margin-bottom: 10vh;
+}
+.task::after{
+    margin: 5vh;
+    content: "";
+    display: block;
+    background-color: green;
+    width: 30%;
+    min-height: 2px;
+}
+ol > li > button {
+    background-color:  white;
+    padding: 10px 10px;
+    margin-right: 5vw;
+    cursor: pointer;
+}
+ol > li > button:nth-of-type(1):hover {
+  border: 2px solid green;
+  color: green;
+  cursor: pointer;
+}
+ol > li > button:nth-of-type(2):hover {
+  border: 2px solid red;
+  color: red;
+  cursor: pointer;
 }
